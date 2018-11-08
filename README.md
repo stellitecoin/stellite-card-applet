@@ -17,4 +17,35 @@ Some advantages in using a smartcards to do transaction:
 
 This is yet to be final design, but open, peer-reviewed security design are preferred to be used as a foundation. Pros review are encouraged to make it a really good security design. 
 
-*NOTE : currently under development and no usable code available yet*
+# Build applet
+
+**Windows**
+
+Download and install JCKit http://www.javacardos.com/JCIDE/downloads/JCKit.zip
+
+* Create new project, select JC version with minimal java_card_kit-2_2_2. This depend on what version of Javacard you are using.
+* set package name to "stellitecard" and package ID to "78 74 6C 61 70 00"
+* set applet name to "Stellitecard" (note the uppercase) and applet ID to "78 74 6C 61 70 01"
+* replace file Stellitecard.java using the one in this project
+* edit userEmail and userPassword in the code according your StellitePay account
+* build all packages
+
+**Linux**
+
+TBD
+
+# Install applet to card
+
+**Windows**
+
+* Open pyApduTools (come with JCKit)
+* Connect
+* Navigate to Manager tab, browse for .cap file in your build folder above
+* Download and install
+
+**Linux**
+
+TBD
+
+
+
